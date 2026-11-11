@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int water;
+
+    printf("Enter water level (0-100): ");
+    scanf("%d", &water);
+
+    if (water < 30)
+        printf("Motor ON\n");
+    else if (water >= 90)
+        printf("Motor OFF\n");
+    else
+        printf("Water Level Normal\n");
+
+    return 0;
+}
